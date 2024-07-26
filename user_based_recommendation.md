@@ -8,12 +8,12 @@ Recommend movies to the users using using user-based collaborative filtering met
 
 **note:** small rating dataset is used for better model performance and disk space. Download 'rating.csv' from the link and use instead of ratings_small.csv to obtain more accurate and meaningfull results.
 
-1. Preparing the Data Set
-2. Determining the Movies Watched by the User to Make a Recommendation
-3. Accessing Data and IDs of Other Users Watching the Same Movies
-4. Identifying Users with the Most Similar Behavior to the User to Make a Recommendation
-5. Calculating the Weighted Average Recommendation Score
-6. Functionalization of Work
+1. [Preparing the Data Set](#1-preparing-the-data-set)
+2. [Determining the Movies Watched by the User to Make a Recommendation](#2-determining-the-movies-watched-by-the-user-to-make-a-recommendation)
+3. [Accessing Data and IDs of Other Users Watching the Same Movies](#3-accessing-data-and-ids-of-other-users-watching-the-same-movies)
+4. [Identifying Users with the Most Similar Behavior to the User to Make a Recommendation](#4-identifying-users-with-the-most-similar-behavior-to-the-user-to-make-a-recommendation)
+5. [Calculating the Weighted Average Recommendation Score](#5-calculating-the-weighted-average-recommendation-score)
+6. [Functionalization of Work](#6-functionalization-of-work)
 
 
 ## 1. Preparing the Data Set
@@ -96,12 +96,12 @@ corr_df.index.names = ['user_id_1', 'user_id_2']
 corr_df = corr_df.reset_index()
 ``` 
 
-    user_id_1  user_id_2      corr
-0        15.0       15.0  1.000000
-1       654.0      509.0  0.614231
-2       452.0      654.0  0.601629
-3       196.0      654.0  0.569058
-4       196.0      654.0  0.569058
+        user_id_1  user_id_2      corr
+    0        15.0       15.0  1.000000
+    1       654.0      509.0  0.614231
+    2       452.0      654.0  0.601629
+    3       196.0      654.0  0.569058
+    4       196.0      654.0  0.569058
 
 - Find top users having correlation greater than 0.5 with the random_user.
 
@@ -115,19 +115,19 @@ top_users.rename(columns={"user_id_2": "userId"}, inplace=True)
 
 top_users:
 
-   userId      corr
-0   311.0  0.834428
-1   654.0  0.569058
-2   463.0  0.528302
+       userId      corr
+    0   311.0  0.834428
+    1   654.0  0.569058
+    2   463.0  0.528302
 
 - Bring the ratings of the top users together as a dataframe 'top_users_ratings'.
 
-top_users_ratings
+top_users_ratings:
 
-      userId      corr  movieId  rating
-0      311.0  0.834428        1     3.0
-1      311.0  0.834428        6     4.0
-2      311.0  0.834428        7     3.0
+          userId      corr  movieId  rating
+    0      311.0  0.834428        1     3.0
+    1      311.0  0.834428        6     4.0
+    2      311.0  0.834428        7     3.0
 
 ## 5. Calculating the Weighted Average Recommendation Score
 
@@ -150,10 +150,10 @@ movies_to_recommend=movies_to_recommend.merge(movie[["movieId", "title"]])
 ```
 movies_to_recommend:
 
-    movieId  weighted_rating                                              title
-0       529         4.172140                 Searching for Bobby Fischer (1993)
-1      8665         4.172140                       Bourne Supremacy, The (2004)
-2      1293         4.172140                                      Gandhi (1982)
+        movieId  weighted_rating                                              title
+    0       529         4.172140                 Searching for Bobby Fischer (1993)
+    1      8665         4.172140                       Bourne Supremacy, The (2004)
+    2      1293         4.172140                                      Gandhi (1982)
 
 # 6. Functionalization of Work
 

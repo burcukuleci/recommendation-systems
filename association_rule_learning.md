@@ -23,6 +23,13 @@ Parameters that are used for generating association rules are:
 
 - dataset: online_retail_II.xlsx  [link](https://archive.ics.uci.edu/ml/datasets/Online+Retail+II)
 
+**Outline**
+1. [Data Preprocessing](#1-data-preprocessing)
+2. [Preparing ARL Data Structure (Invoice-Product Matrix)](2-preparing-arl-data-structure-invoice-product-matrix)
+3. [Extracting Association Rules](#3-extracting-association-rules)
+4. [Recommending Products to Users](#4-recommending-products-to-users)
+5. [Script](5-script)
+
 ## 1. Data Preprocessing
 
 Dataframe is created by reading 'online_retail_II.xlsx' excel.

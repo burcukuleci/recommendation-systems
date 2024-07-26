@@ -18,9 +18,11 @@ Columns: UserId, ServiceId, CategoryId, CreateDate
 df.head()
 ```
 
-   UserId  ServiceId  CategoryId          CreateDate Service Year_Month       BasketId
-0   25446          4           5 2017-08-06 16:11:00     4_5    2017-08  25446_2017-08
-1   22948         48           5 2017-08-06 16:12:00    48_5    2017-08  22948_2017-08
+                 UserId  ServiceId  CategoryId            CreateDate  Service   Year_Month       BasketId
+
+      0           25446           4           5  2017-08-06 16:11:00      4_5      2017-08   25446_2017-08
+
+      1           22948          48           5  2017-08-06 16:12:00     48_5      2017-08   22948_2017-08
 
 
 ## 2: Extract Association Rules and Recommend Service.
@@ -31,11 +33,15 @@ df.head()
 invoice_product_df.head()
 ```
 
-Service        0_8  10_9  11_11  12_7  13_11  14_7  15_1  16_8  17_5  18_4..
-BasketId
-0_2017-08        0     0      0     0      0     0     0     0     0     0..
-0_2017-09        0     0      0     0      0     0     0     0     0     0..
-0_2018-01        0     0      0     0      0     0     0     0     0     0..
+    Service        0_8  10_9  11_11  12_7  13_11  14_7  15_1  16_8  17_5  18_4..
+   
+    BasketId
+   
+    0_2017-08        0     0      0     0      0     0     0     0     0     0..
+   
+    0_2017-09        0     0      0     0      0     0     0     0     0     0..
+   
+    0_2018-01        0     0      0     0      0     0     0     0     0     0..
 
 - **2.2** : Create association rules.
 

@@ -22,10 +22,10 @@ All of this steps are done within TfidfVectorizer() function.
 
 - dataset: movies_metadata.csv  [link](https://www.kaggle.com/rounakbanik/the-movies-dataset)
 
-1. TF-IDF Matrix
-2. Cosine Similarity Matrix
-3. Make Recommendation According to Similarities
-4. Script
+1. [TF-IDF Matrix1](#tf-idf-matrix)
+2. [Cosine Similarity Matrix](#cosine-similarity-matrix)
+3. [Make Recommendation According to Similarities](#make-recommendation-according-to-similarities)
+4. [Script](#script)
 
 
 ## 1. TF-IDF Matrix

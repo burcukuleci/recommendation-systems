@@ -7,7 +7,7 @@ This repository contains Python code files for model development for each recomm
 - Clone the 'Recommendation Systems' repository using your terminal or git bash.
 
 ```
-git clone https://github.com/burcukuleci/Recommendation_Systems.git
+git clone https://github.com/burcukuleci/recommendation-systems.git
 ```
 - Download all required packages using the requirements.txt file by running the below command in the terminal.
 

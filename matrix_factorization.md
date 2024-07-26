@@ -8,11 +8,11 @@ Example: The rating of user 1 that would give to movie C will be predicted by us
 
 - dataset: movie.csv, ratings_small.csv   [data link](https://grouplens.org/datasets/movielens/)
 
-1. Prepare the Dataset
-2. Modelling
-3. Model Tuning
-4. Final Model and Prediction
-5. Predict the Non-existing Ratings
+1. [Prepare the Dataset](#1-prepare-the-dataset)
+2. [Modelling](#2-modelling)
+3. [Model Tuning](#3-model-tuning)
+4. [Final Model and Prediction](#4-final-model-and-prediction)
+5. [Predict the Non-existing Ratings](#5-predict-the-non-existing-ratings)
 
 
 ## 1. Prepare the Dataset
@@ -85,7 +85,7 @@ full_trainset = data.build_full_trainset()
 svd_model_best.fit(full_trainset)
 ```
 
-## 5.Predict the Non-existing Ratings
+## 5. Predict the Non-existing Ratings
 
 Create 'user_movie_df_filled' by filling empty rating values with the predicted rating values with SVD model.
 

@@ -19,7 +19,16 @@ pip install -r requirements.txt
 
 ***Note: This README.md file provides short information for each Python file. Separate markdown files explain the code and the project in detail. Please refer to those markdown files for detailed information.***
 
-
+**OUTLINE**
+1. [ASSOCIATION RULE LEARNING](#association-rule-learning)
+2. [PROJECT: ARMUT ARL RECOMMENDER SYSTEM](#project-armut-arl-recommender-system)
+3. [PROJECT: ONLINE RETAIL ARL RECOMMENDER SYSTEM](#project-online-retail-arl-recommender-system)
+4. [CONTENT BASED RECOMMENDATION](#content-based-recommendation)
+5. [COLLABORATIVE FILTERING](#collaborative-filtering)
+6. [ITEM-BASED COLLABORATIVE FILTERING](#item-based-collaborative-filtering)
+7. [USER-BASED COLLABORATIVE FILTERING](#user-based-collaborative-filtering)
+8. [PROJECT: HYBRID RECOMMENDER SYSTEM](#project-hybrid-recommender-system)
+9. [MODEL BASED MATRIX FACTORIZATION METHOD](#model-based-matrix-factorization-method)
 
 ## ASSOCIATION RULE LEARNING
 
@@ -90,9 +99,9 @@ Example: Content based recommender system will recommended you the movies with s
 
 - Method: The TF-IDF scores of the words from overview text are calculated. Then cosine similarities between movies are calculated. Then, the top 10 most similar movies to a specified movie based on highest cosine similarity scores.
 
-- sklearn's *TfidfVectorizer* function is used to create tf-idf matrix. Matrix rows are the overviews and columns are the words.
+sklearn's *TfidfVectorizer* function is used to create tf-idf matrix. Matrix rows are the overviews and columns are the words.
 
-- sklearn's *cosine_similarity* function is used to calculate cosine similarities between movies(overview texts).
+sklearn's *cosine_similarity* function is used to calculate cosine similarities between movies(overview texts).
 
 - dataset: movies_metadata.csv  [data link](https://www.kaggle.com/rounakbanik/the-movies-dataset)
 
@@ -110,7 +119,7 @@ The items having a reaction/preference from other users that are similar to what
 
 Example: If you liked a movie, recommender system recommends the similar movies to that movie based on the preferences (ratings) of other users who also liked it.
 
->`*python file*: [item_based_recommendation.py](item_based_recommendation.py)
+> *python file*: [item_based_recommendation.py](item_based_recommendation.py)
 
 - Aim: When users like a movie, recommend other movies with "similar liking patterns" to that movie.
 
@@ -155,7 +164,7 @@ note: download ratings.csv from the link.
 *md file*: [hybrid_recommender.md](hybrid_recommender.md)
 
 
-## MODEL BASED MATRIX FACTORIZATION 
+## MODEL BASED MATRIX FACTORIZATION METHOD
 
 MF can be used to calculate the similarity in user’s ratings or interactions to provide recommendations. 
 

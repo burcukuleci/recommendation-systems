@@ -21,9 +21,7 @@ Parameters that are used for generating association rules are:
 
 - Method: *apriori* and *assocotion_rules* functions are used from *mlextend.frequent_patterns* library. 
 
-- dataset: online_retail_II.xlsx 
-
-        https://archive.ics.uci.edu/ml/datasets/Online+Retail+II
+- dataset: online_retail_II.xlsx  [link](https://archive.ics.uci.edu/ml/datasets/Online+Retail+II)
 
 ## 1. Data Preprocessing
 
@@ -35,17 +33,17 @@ Dataframe is created by reading 'online_retail_II.xlsx' excel.
 
 Data structure should be pivot table such that rows sare invoice numbers, columns are pproduct names and the values are binary form of product quantities.
 
-``
-Description   NINE DRAWER OFFICE TIDY   SET 2 TEA TOWELS I LOVE LONDON    SPACEBOY BABY GIFT SET
 
-Invoice
+        Description   NINE DRAWER OFFICE TIDY   SET 2 TEA TOWELS I LOVE LONDON    SPACEBOY BABY GIFT SET
 
-536370                              0                                 1                       0
+        Invoice
 
-536852                              1                                 0                       1
+        536370                              0                                 1                       0
 
-536974                              0                                 0                       0
-```
+        536852                              1                                 0                       1
+
+        536974                              0                                 0                       0
+
 
 - Sum product quantities within each invoice. Then use *unstack()* to shown items as columns. Use *fillna(0)* to fill NaN values with zero.
 
@@ -90,7 +88,7 @@ rules = association_rules(frequent_itemsets,
 2       (10002)        (21915)            0.020566            0.069409  0.010283    0.500000   7.203704  0.008855    1.861183       0.879265
 ``` 
 
-**Columns:**
+***Columns:***
 
     antecedents: X
 
@@ -137,7 +135,7 @@ Recommend products to the user having the product with 'product_id' in the baske
 
 Sort rules according to one of the metrics (support, confidence, lift).
 
-Antecendents values that contains 'product_id' will be selected then the consequents corresponding those selected antecedents will be used for recommendations. Within the set of consequents only the first item will be chosen as recommendation.
+Antecedent values that contain 'product_id' will be selected, and the consequents corresponding to those selected antecedents will be used for recommendations. Within the set of consequents, only the first item will be chosen as a recommendation.
 
 - Create function called **arl_recommender_metric** to return list of recommended products.
 

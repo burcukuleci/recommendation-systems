@@ -17,7 +17,7 @@ Parameters that are used for generating association rules are:
 
 ## Project :
 
-- Aim: The step-by-step codes to generate association rules are as follows: data preprocessing, preparing invoice-product matrix, extracting association rules, recommending products to users, and script.
+- Aim: The step-by-step codes to generate association rules to recommend products to customers.
 
 - Method: *apriori* and *assocotion_rules* functions are used from *mlextend.frequent_patterns* library. 
 
@@ -27,7 +27,7 @@ Parameters that are used for generating association rules are:
 1. [Data Preprocessing](#1-data-preprocessing)
 2. [Preparing ARL Data Structure (Invoice-Product Matrix)](2-preparing-arl-data-structure-invoice-product-matrix)
 3. [Extracting Association Rules](#3-extracting-association-rules)
-4. [Recommending Products to Users](#4-recommending-products-to-users)
+4. [Recommending Products to Customers](#4-recommending-products-to-customers)
 5. [Script](5-script)
 
 ## 1. Data Preprocessing
@@ -134,7 +134,7 @@ def create_rules(dataframe, id=True, country="France"):
 rules = create_rules(df)
 ```
 
-## 4. Recommending Products to Users
+## 4. Recommending Products to Customers
 
 Recommend products to the user having the product with 'product_id' in the basket.
 

@@ -33,6 +33,7 @@ All of this steps are done within TfidfVectorizer() function.
 - Define tfidf. TfidfVectorizer is used to calculate TF-IDF scores of words.
 
 ```python
+from sklearn.feature_extraction.text import TfidfVectorizer
 tfidf = TfidfVectorizer(stop_words="english", max_features=10000)
 ```
 
@@ -51,6 +52,7 @@ tfidf_matrix columns are the words.
 - Check the cosine similarities between movies(overviews) using sparse matrix tfidf_matrix.
 
 ```python
+from sklearn.metrics.pairwise import cosine_similarity
 cosine_sim = cosine_similarity(tfidf_matrix, tfidf_matrix)
 ```
 

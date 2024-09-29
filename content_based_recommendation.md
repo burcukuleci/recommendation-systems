@@ -6,17 +6,17 @@ Make recommendations using overview's of the movies.
 
 If word count is used, the frequency of the word in one movie description cannot be directly compared with the frequency values ​​of the words in the other movie description.
 
-Step1: Calculate word counts for each description.
+**Step1**: Calculate word counts for each description.
 
-Step2: Calculate the TF(Term Frequency) value to standardize each movie within itself.
+**Step2**: Calculate the TF(Term Frequency) value to standardize each movie within itself.
  
        Freq(word) / N , N: total words in the movie overview
 
-Step3: Calculate IDF (Inverse Document Frequency) value. – How many of the movie descriptions in the corpus contain the relevant word?
+**Step3**: Calculate IDF (Inverse Document Frequency) value. – How many of the movie descriptions in the corpus contain the relevant word?
 
-Step4: Calculate TF-IDF score. TF-IDF = TF*IDF
+**Step4**: Calculate TF-IDF score. TF-IDF = TF*IDF
 
-Step5: L2 Normalization. TF-IDF/square root of the sum of squares of TF-IDF values
+**Step5**: L2 Normalization. TF-IDF/square root of the sum of squares of TF-IDF values
 
 All of this steps are done within TfidfVectorizer() function.
 

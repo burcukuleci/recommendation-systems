@@ -10,6 +10,8 @@ Parameters that are used for generating association rules are:
 - N: Total number of baskets/transactions.
 
 - **Freq(X, Y)** : Number of unique invoices where X and Y are purchased together.
+  
+- ****Support**(X) = Freq(X) / N**
 
 - **Support**(X, Y) = Freq(X, Y) / N  : Probability of X and Y itemsets to be present in a purchase/invoice. (X, Y) association occurs support(%) of the transactions.
 

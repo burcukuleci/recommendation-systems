@@ -57,7 +57,7 @@ def create_user_movie_df():
 user_movie_df = create_user_movie_df()
 ``` 
 
-- Define a funtion to get the list of recommend movies for specified 'movie_name'.
+- Define a function to get the list of recommend movies for specified 'movie_name'.
 
 ```python
 def item_based_recommender(movie_name, user_movie_df):

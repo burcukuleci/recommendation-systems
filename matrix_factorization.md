@@ -49,6 +49,7 @@ svd_model.predict(uid=2.0, iid=541, verbose=True)
 ```
 
 Output:
+
 ```
 r_ui=actual rating    est=estimated rating
 user: 2.0        item: 541        r_ui = None   est = 3.92   {'was_impossible': False}

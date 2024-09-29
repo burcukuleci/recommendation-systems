@@ -38,7 +38,7 @@ Dataframe is created by reading 'online_retail_II.xlsx' excel.
 
 ## 2. Preparing ARL Data Structure (Invoice-Product Matrix)
 
-Data structure should be pivot table such that rows sare invoice numbers, columns are pproduct names and the values are binary form of product quantities.
+Data structure should be pivot table such that rows sare invoice numbers, columns are product names and the values are binary form of product quantities(whether product exists in the invoice or not).
 
 
         Description   NINE DRAWER OFFICE TIDY   SET 2 TEA TOWELS I LOVE LONDON    SPACEBOY BABY GIFT SET

@@ -17,7 +17,7 @@ note: small rating dataset is used for better model performance and disk space.
 df = movie.merge(rating, how="left", on="movieId")
 ``` 
 
-## 2. Create User Movie Df
+## 2. Create User-Movie Matrix
 
 Filter movies that have rating counts smaller than a specified value.
 

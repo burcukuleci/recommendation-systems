@@ -38,7 +38,7 @@ Dataframe is created by reading 'online_retail_II.xlsx' excel.
 
 ## 2. Preparing ARL Data Structure (Invoice-Product Matrix)
 
-Data structure should be pivot table such that rows sare invoice numbers, columns are product names and the values are binary form of product quantities(whether product exists in the invoice or not).
+Data structure should be pivot table such that rows sare invoice numbers, columns are product names and the values are binary form of product quantities (whether the product exists in the invoice or not).
 
 
         Description   NINE DRAWER OFFICE TIDY   SET 2 TEA TOWELS I LOVE LONDON    SPACEBOY BABY GIFT SET
@@ -52,9 +52,9 @@ Data structure should be pivot table such that rows sare invoice numbers, column
         536974                              0                                 0                       0
 
 
-- Sum product quantities within each invoice. Then use *unstack()* to shown items as columns. Use *fillna(0)* to fill NaN values with zero.
+- Sum product quantities within each invoice. Then use *unstack()* to show items as columns. Use *fillna(0)* to fill NaN values with zero.
 
-- use *applymap* and *lambda* convert each count values that are greater than zero to 1 and values of zeros to 0.
+- use *applymap* and *lambda* convert each count values that are greater than zero to 1 and the values of zeros to 0.
 
 ```python
 df.groupby(['Invoice', 'Description']).agg({"Quantity": "sum"}).unstack().fillna(0). \

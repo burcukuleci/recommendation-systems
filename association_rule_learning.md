@@ -140,7 +140,7 @@ rules = create_rules(df)
 
 ## 4. Recommending Products to Customers
 
-Recommend products to the user having the product with 'product_id' in the basket.
+Recommend products to the customers having the product with 'product_id' in the basket.
 
 ***Method:***
 

@@ -21,12 +21,13 @@ invoice_product_df = create_invoice_product_df_bool(df, id=True)
 invoice_product_df.head()
 ```
 
+```
 Description   NINE DRAWER OFFICE TIDY   SET 2 TEA TOWELS I LOVE LONDON    SPACEBOY BABY GIFT SET
 Invoice
 536370                              0                                 1                       0
 536852                              1                                 0                       1
 536974                              0                                 0                       0
-
+```
 
 - **2.2**: Generate association rules by defining "create_rules" and then find rules for the customers from Germany.
 

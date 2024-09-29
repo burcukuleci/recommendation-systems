@@ -9,7 +9,7 @@
 # 5. Script
 
 
-#### BUSINESS PROBLEM : Recommending Products to Users
+#### BUSINESS PROBLEM : Recommending Products to Customers
 
 import pandas as pd
 from mlxtend.frequent_patterns import apriori, association_rules
@@ -220,7 +220,7 @@ rules = create_rules(df)
 
 
 ############################################
-# 4. Recommending Products to Users
+# 4. Recommending Products to Customers
 ############################################
 
 product_id = 22492
